@@ -6,6 +6,6 @@
 
 This is important 
 This website is not broken if you can see the tags in headings 
-for example in the main page "<portfolio>"
+for example in the main page "portfolio" has html tags wrapped
 This is just a new design I tried to implement
-You can open up the index.html to verify that the tags very deliberate
+You can open up the index.html to verify that the tags are deliberate
