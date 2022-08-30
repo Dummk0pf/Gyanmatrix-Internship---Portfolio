@@ -22,13 +22,13 @@ a{
   height: 100vh;
   overflow: auto;
   color:white;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 .section {
     width: 100%;
-    height: 100vh;
-    scroll-snap-align: start;
+    min-height:100vh;
+    scroll-snap-align:start end;
 }
 
 .scrollnav{
@@ -135,7 +135,7 @@ a{
       color:#020102;
     }
 
-.container .section:nth-of-type(1) {
+.section:nth-of-type(1) {
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -158,10 +158,16 @@ a{
         padding: 1rem;
     }
 
+    .about{
+        font-family: 'Alumni Sans Pinstripe', serif;
+        font-weight:500;
+        font-size:3.5rem;
+    }
+
     .sidebar p{         
         position:absolute;
         bottom:1rem;
-		font-size:3.5vh;
+		font-size:3vh;
         padding: 1rem;
     }
 
@@ -315,83 +321,140 @@ a{
     }
 
 
-.container .section:nth-of-type(2){
+.section:nth-of-type(2),.section:nth-of-type(3){
+    position: relative;
     background: #c31432; 
     background: -webkit-linear-gradient(to right, #240b36, #c31432);  
     background: linear-gradient(to right, #240b36, #c31432);
-	position: relative;
 }
     .heading{
-		position: absolute;
+        text-align: center;
 		font-size:3rem;
-		width: fit-content;
-		padding:2rem;
-		top:-2vh;
-		right:40%;
-		margin:0 auto;
-    }
-
-    .footing{
-        position: absolute;
-		font-size:3rem;
-		width: fit-content;
-		padding:2rem;
-		bottom:0.5vh;
-		right:40%;
+		width: 100%;
+        height: fit-content;
 		margin:0 auto;
     }
 
     .cardbox{
-		size: 100% ;
-        padding:11vh 0;
+		size: 100%;
+        padding:1vh 0;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
     }
 
     .card{
-        width:30%;
-        height:70vh;
+        width:25%;
+        min-height:23rem;
 		margin:1rem;
+        padding:1rem;
 		text-align:center;
-        background-color: rgba(0, 0, 0, 0.29);
-		background-color: black;
+        background-color: rgba(0, 0, 0, 0.0.29);
         border-radius: 1rem;
         box-shadow: 0rem 0rem 0.5rem white;
     }
 
-    .card h1{
+    .H1{
+        background-color:#02010252;
+        height:5%;
         font-size:10vh;
+        border-radius:0.5rem;
     }
 
-    .card p{
-		text-align: left;
-        font-size:2.9vh;
-        padding-top:1vh;
-		padding-left:1vh;
+    .border{
+        text-align:center;
+        margin-top:2vh;
+        box-sizing: border-box;
+        background-color:#02010244;
+        border-radius:0.5rem;
+    }
+
+    .Par{
+        background-color:#02010252;
+        font-size:0.9rem;
+        padding:0 0.7rem;
+        margin-top:3vh;
+        border-radius:0.5rem;
     }
 
     .sdl{
-      width:55%;
-      background-color: rgba(119, 136, 153, 0.66);
-      padding:0.4rem;
-      border-radius: 0.5rem;
+        width:60%;
+        background-color: rgba(119, 136, 153, 0.66);
+        padding:0.4rem;
+        border-radius: 0.5rem;
     }
 
     .lang{
-      width:70%;
-      height:23%;
-      background-color: rgba(119, 136, 153, 0.162);
-      padding:0.2rem;
-      border-radius: 0.5rem;
+        width:80%;
+        background-color: rgba(119, 136, 153, 0.103);
+        padding:0.5rem;
+        border-radius: 1rem;
     }
 
     .chef{
-      width:80%;
-      background-color:rgba(0, 0, 0, 0.184);;
-      padding:0.6rem;
-      border-radius: 0.5rem;
+        width:80%;
+        background-color:rgba(0, 0, 0, 0.184);
+        padding:0.6rem;
+        border-radius: 0.5rem;
     }
+
+    .book{
+		width:50%;
+        border-radius: 0.5rem;
+	}
+
+	.cycle{
+		width:70%;
+        border-radius: 0.5rem;
+	}
+
+	.hand{
+		width:68%;
+        margin:0.5rem;
+		border-radius: 1rem;
+		box-shadow: 0rem 0rem 0.5rem white;
+        border-radius: 0.5rem;
+	}
+
+@media (max-width:880px){
+    .cardbox{
+        width:80%;
+        margin:0 auto;
+    }
+
+    .card{
+        width:50%;
+    }
+
+    .Par{
+        padding:1rem 1rem;
+    }
+}
+
+@media (max-width:550px){
+    .card{
+        max-height:15rem;
+        width:70%;
+    }
+
+    .Par{
+        line-height:1vw;
+        font-size:2vw;
+    }
+
+    .book{
+        width:35%;
+    }
+
+    .cycle{
+        width:50%;
+    }
+
+    .hand{
+        width:50%;
+    }
+}
 
 /* .container .section:nth-of-type(3){ 
 	position: relative;
