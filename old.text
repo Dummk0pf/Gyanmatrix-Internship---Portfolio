@@ -1,0 +1,110 @@
+previous first page
+
+
+<div class="sidebar">
+    <h1>portfolio</h1>
+    <p> <span class="about">aboutme</span><br>
+    I'm prames and I like to consider myself as an average human with average intelligence</p>
+</div>
+<div class="dialogue">
+    <p>Oi! Yea you there , This page has custom navigation bar so give your ol' scrollbar some rest will ya ?</p>
+    <p>A rude one ye , I ain't finished , What ? you thought , I'm a poster ain't ya?</p>
+    <p>My bruv did all this animation with just css because he's a beginner so spare him will ya ? Javascript is ye bit too much for him</p>
+    <p>And try being nice with him and give him a chance will ya <br> That's it , off you go</p>
+</div>
+<div class="logoimg"><img src="images/logoff_adobe_express.svg" alt="mylogo" id="logo"></div>
+<img src="images/golden-record.svg" alt="image of golden record in voyager 1" id="goldord">
+<img src="images/spacesuitman_adobe_express.svg" alt="spacesuitman" id="spaceman">
+
+style
+
+.sidebar{
+        background-color: rgba(0, 0, 0, 0.428);
+        width:fit-content;
+        height:99vh;
+        position:relative;
+        border: solid rgba(255, 255, 255, 0.571) 0.1rem;
+        border-radius: 2rem;
+        box-shadow: 0rem 0rem 0.4rem white;
+    }
+
+    .sidebar h1{
+        font-size:5rem;
+        padding: 1rem;
+    }
+
+    .about{
+        font-family: 'Alumni Sans Pinstripe', serif;
+        font-weight:500;
+        font-size:3.5rem;
+    }
+
+    .sidebar p{         
+        position:absolute;
+        bottom:1rem;
+		font-size:3vh;
+        padding: 1rem;
+    }
+
+    .dialogue{
+      width:25%;
+      height:15%;
+      position: absolute;
+      top:30%;
+      left:48%;
+      z-index: 2;
+      border:0.1rem solid white;
+      background-color: rgba(0, 0, 0, 0.318);
+      border-radius: 2rem;
+      padding:1rem;
+    }
+
+    .dialogue p:nth-of-type(1){
+      z-index: 3;
+      animation:fade-out 1s 8s linear forwards;
+    }
+/* use hover */
+    .dialogue p:nth-of-type(2){
+      width:100%;
+      position: absolute;
+      top:20%;
+      opacity: 0;
+      animation: fade-in 1s 10s linear forwards,fade-out 1s 18s linear forwards;
+      z-index: 4;
+    }
+
+    .dialogue p:nth-of-type(3){
+      width:95%;
+      position: absolute;
+      top:8%;
+      opacity: 0;
+      animation: fade-in 1s 19s linear forwards,fade-out 1s 27s linear forwards;
+      z-index: 5;
+    }
+
+    .dialogue p:nth-of-type(4){
+      width:95%;
+      position: absolute;
+      top:8%;
+      opacity: 0;
+      animation: fade-in 1s 28s linear forwards;
+      z-index: 6;
+    }
+
+    @keyframes fade-in{
+      from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+    }
+
+    @keyframes fade-out{
+      from{
+        opacity:1
+      }
+      to{
+        opacity:0;
+      }
+    }

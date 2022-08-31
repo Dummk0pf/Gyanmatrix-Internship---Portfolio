@@ -1,20 +1,23 @@
 body{
-  background-color: #020102;
+  background-color: white;
 }
 
 h1{
-  font-family: 'Alumni Sans Pinstripe', serif;
+	color:#b42328;
+  	font-family: 'Alumni Sans Pinstripe', serif;
 }
 
 p{
-  font-family: 'Poppins',sans-serif;
-  font-weight: 600;
-  line-height: 1.7rem;
+	color:white;
+	font-family: 'Poppins',sans-serif;
+	font-weight: 600;
+	line-height: 1.7rem;
 }
 
 a{
-  text-decoration: none;
-  color:rgb(192, 3, 255);
+	font-style: italic;
+	text-decoration: underline;
+  	color:white;
 }
 
 .container {
@@ -22,7 +25,7 @@ a{
   height: 100vh;
   overflow: auto;
   color:white;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 .section {
@@ -136,103 +139,27 @@ a{
     }
 
 .section:nth-of-type(1) {
-    background: #c31432;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
-    position: relative;
+	position: relative;
 }
 
-    .sidebar{
-        background-color: rgba(0, 0, 0, 0.428);
-        width:fit-content;
-        height:99vh;
-        position:relative;
-        border: solid rgba(255, 255, 255, 0.571) 0.1rem;
-        border-radius: 2rem;
-        box-shadow: 0rem 0rem 0.4rem white;
-    }
+	.fronthead{
+		width: 100%;
+		text-align: center;
+	}
 
-    .sidebar h1{
-        font-size:5rem;
-        padding: 1rem;
-    }
+	.fhead h1{
+		margin:5rem auto -10rem auto;
+		font-size: 1.5rem;
+		font-weight:600;
+		color:black;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
 
-    .about{
-        font-family: 'Alumni Sans Pinstripe', serif;
-        font-weight:500;
-        font-size:3.5rem;
-    }
-
-    .sidebar p{         
-        position:absolute;
-        bottom:1rem;
-		font-size:3vh;
-        padding: 1rem;
-    }
-
-    .dialogue{
-      width:25%;
-      height:15%;
-      position: absolute;
-      top:30%;
-      left:48%;
-      z-index: 2;
-      border:0.1rem solid white;
-      background-color: rgba(0, 0, 0, 0.318);
-      border-radius: 2rem;
-      padding:1rem;
-    }
-
-    .dialogue p:nth-of-type(1){
-      z-index: 3;
-      animation:fade-out 1s 8s linear forwards;
-    }
-/* use hover */
-    .dialogue p:nth-of-type(2){
-      width:100%;
-      position: absolute;
-      top:20%;
-      opacity: 0;
-      animation: fade-in 1s 10s linear forwards,fade-out 1s 18s linear forwards;
-      z-index: 4;
-    }
-
-    .dialogue p:nth-of-type(3){
-      width:95%;
-      position: absolute;
-      top:8%;
-      opacity: 0;
-      animation: fade-in 1s 19s linear forwards,fade-out 1s 27s linear forwards;
-      z-index: 5;
-    }
-
-    .dialogue p:nth-of-type(4){
-      width:95%;
-      position: absolute;
-      top:8%;
-      opacity: 0;
-      animation: fade-in 1s 28s linear forwards;
-      z-index: 6;
-    }
-
-    @keyframes fade-in{
-      from{
-        opacity:0;
-      }
-      to{
-        opacity:1;
-      }
-    }
-
-    @keyframes fade-out{
-      from{
-        opacity:1
-      }
-      to{
-        opacity:0;
-      }
-    }
+	.fronthead img{
+		width:19.5rem;
+	}
 
     .logoimg{
       animation: tat 2s ease-out forwards 2s;
@@ -323,16 +250,23 @@ a{
 
 .section:nth-of-type(2),.section:nth-of-type(3){
     position: relative;
-    background: #c31432; 
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  
-    background: linear-gradient(to right, #240b36, #c31432);
+	display: flex;
+	align-items:center;
+	background: #EDEEF2;
+	background-image: url(images/back3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-    .heading{
+
+    .heading h1{
         text-align: center;
+		color: black;
+		font-weight: 500;
 		font-size:3rem;
 		width: 100%;
         height: fit-content;
-		margin:0 auto;
+        padding-top:0.5rem;
+		margin:0 auto;;
     }
 
     .cardbox{
@@ -350,15 +284,16 @@ a{
 		margin:1rem;
         padding:1rem;
 		text-align:center;
-        background-color: rgba(0, 0, 0, 0.0.29);
+        background-color: #b42328;
         border-radius: 1rem;
-        box-shadow: 0rem 0rem 0.5rem white;
+        box-shadow: 0rem 0rem 1rem rgb(103, 103, 103);
     }
 
     .H1{
-        background-color:#02010252;
+        background-color: #EDEEF2;
+		width:120%;
         height:5%;
-        font-size:10vh;
+        font-size:5vw;
         border-radius:0.5rem;
     }
 
@@ -366,22 +301,25 @@ a{
         text-align:center;
         margin-top:2vh;
         box-sizing: border-box;
-        background-color:#02010244;
+        /* background-color:#0201020c; */
         border-radius:0.5rem;
     }
 
     .Par{
-        background-color:#02010252;
+		min-height:7.5rem;
+        text-align: left;
+        background-color:#0201021b;
         font-size:0.9rem;
         padding:0 0.7rem;
-        margin-top:3vh;
+        /* margin-top:3vh; */
         border-radius:0.5rem;
     }
 
     .sdl{
         width:60%;
-        background-color: rgba(119, 136, 153, 0.66);
+        background-color: rgba(159, 159, 159, 0.66);
         padding:0.4rem;
+		margin-bottom:3vh;
         border-radius: 0.5rem;
     }
 
@@ -389,6 +327,7 @@ a{
         width:80%;
         background-color: rgba(119, 136, 153, 0.103);
         padding:0.5rem;
+		margin-bottom:2vh;
         border-radius: 1rem;
     }
 
@@ -396,32 +335,44 @@ a{
         width:80%;
         background-color:rgba(0, 0, 0, 0.184);
         padding:0.6rem;
+		margin-bottom:3vh;
         border-radius: 0.5rem;
     }
 
     .book{
 		width:50%;
+		margin-bottom:1vh;
         border-radius: 0.5rem;
 	}
 
 	.cycle{
 		width:70%;
+		margin-bottom:0.2vh;
         border-radius: 0.5rem;
 	}
 
 	.hand{
 		width:68%;
-        margin:0.5rem;
+		margin-bottom:4vh;
 		border-radius: 1rem;
 		box-shadow: 0rem 0rem 0.5rem white;
         border-radius: 0.5rem;
 	}
 
 @media (max-width:880px){
+
+	.container{
+		scroll-snap-type: y proximity;
+	}
+
     .cardbox{
         width:80%;
         margin:0 auto;
     }
+
+	.H1{
+		font-size:5vw;	
+	}
 
     .card{
         width:50%;
@@ -433,14 +384,23 @@ a{
 }
 
 @media (max-width:550px){
+
+	.container{
+		scroll-snap-type: y proximity;
+	}
+
     .card{
-        max-height:15rem;
-        width:70%;
+        min-height:15rem;
+        width:65%;
     }
 
+	.H1{
+		font-size:5vw;	
+	}
+
     .Par{
-        line-height:1vw;
-        font-size:2vw;
+		margin-top:1vh;
+        font-size:3vw;
     }
 
     .book{
