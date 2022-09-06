@@ -108,3 +108,22 @@ style
         opacity:0;
       }
     }
+
+       #spaceman{
+      position: absolute;
+      bottom:0;
+      right:0;
+      width: 40%;
+      height:60%;
+      filter:invert(10);
+      opacity: 0.8;
+    }
+
+    #goldord{
+      position: absolute;
+      top:0;
+      left:1vw;
+      width:90vw;
+      filter:invert(0.8);
+      opacity:0.1;
+    }
