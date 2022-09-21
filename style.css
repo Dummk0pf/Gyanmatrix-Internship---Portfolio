@@ -141,11 +141,13 @@ a{
 .section:nth-of-type(1) {
     display: flex;
 	position: relative;
+	padding-bottom:2rem;
 }
 
 	.fronthead{
 		width: 100%;
 		text-align: center;
+		padding-top:8vh;
         animation:appear 4s ease-in forwards;
 	}
 
@@ -170,7 +172,7 @@ a{
 		text-orientation: upright;
 	}
 
-	.fronthead img{
+	.fback{
 		width:19.5rem;
 	}
 
@@ -182,14 +184,10 @@ a{
         height:10%;
     }
 
-    .highlight img{
-		position:absolute;
-		top:50%;
-		bottom:50%;
-		left:50%;
-		right:50%;
-		width:2rem;
-		height:2rem;
+    #mainpage map{
+      background-color: black;
+      color: black;
+      box-shadow: 0rem 0rem 1rem black;
     }
 
     .logoimg{
@@ -268,9 +266,9 @@ a{
     position: relative;
 	display: flex;
 	align-items:center;
-	background: #EDEEF2;
-	background-image: url(images/back3.jpg);
-	background-size: cover;
+	background: #F5F4F4;
+	background-image: url("images/back4_adobe_express.svg");
+	background-size: 40rem;
 	background-repeat: no-repeat;
 }
 
@@ -397,6 +395,7 @@ a{
     .Par{
         padding:1rem 1rem;
     }
+
 }
 
 @media (max-width:550px){
@@ -433,17 +432,19 @@ a{
 }
 
 .container .section:nth-of-type(4){
-  background:url("images/5e478905f454f64bef9b219dc4d47bb5.jpg") center no-repeat;
-
-  position:relative;
+	display:block;
+	background: #F5F4F4;
+	background-image: url("images/back4_adobe_express.svg");
+	background-size: 40rem;
+	background-repeat: no-repeat;
+	padding-top:2vh;
 }
 
     form{
-      width:40%;
+      width:40vw;
       padding:0.5rem;
-      position:absolute;
-      inset:5rem 7rem 5rem 1rem;
-      background-color:rgba(0, 0, 0, 0.293);
+	  margin:0rem auto 0rem auto;
+      background-color:rgba(0, 0, 0, 0.782);
       border-radius:0.5rem;
       box-shadow: 0rem 0rem 0.5rem rgba(255, 255, 255, 0.498);
     }
@@ -453,6 +454,7 @@ a{
       background-color: #454545b0;
       font-family:"Poppins",sans-serif;
       font-weight: 600;
+	  font-size:1vw;
       margin:0.5rem;
       padding:0.5rem;
       border-radius:0.5rem;
@@ -466,14 +468,12 @@ a{
     }
 
     #submit{
-      width:5rem;
-      height:3rem;
+      width:5vw;
+      height:10vh;
       margin-left:1rem;
-      background-image:url("images/send_FILL0_wght400_GRAD0_opsz48.svg");
-      background-position:center;
-      background-repeat: no-repeat;
-      background-size: 2.8rem;
-      border-radius:0.5rem;
+	  font-size:1vw;
+	  border:none;
+	  border-radius:0.5rem;
       filter: invert(100) brightness(0.9);
     }
 
@@ -482,51 +482,31 @@ a{
       transform: scale(1.1);
     }
 
-    .lastside{
-      width:fit-content;
-      position:absolute;
-      right:1rem;
-      background-color: rgba(0, 0, 0, 0.502);
-    }
+	.lastside{
+		width:70%;
+		height:18vh;
+		text-align: center;
+		margin:1rem auto 1vh auto;
+		padding:1rem;
+		border-radius:0.2rem;
+	}
 
-    .lastside p{
-      background-color: rgba(128, 128, 128, 0.211);
-      border-radius: 1.7rem;
-      width:70%;
-      right:2rem;
-      top:1rem;
-    }
+	.lastside p{
+    	color:black;
+		margin-bottom:0.5vh;
+	}
 
-    .contact-m{
-      display:flex;
-      width:fit-content;
-      margin-left: 35%;
-      margin-top: 75vh;
-      background-color: rgba(0, 0, 0, 0.358);
-      padding:0.5rem;
-      border-radius:1rem;
-    }
+	.contact-m{
+		width: fit-content;
+		display:flex;
+		margin:0rem auto 0rem auto;
+	}
 
-    .contact-media{
-      background-color: rgba(240, 248, 255, 0.247);
-      border-radius: 0.5rem;
-      filter:invert(100);
-    }
+	.contact-media img{
+		width:2.8rem;
+		margin-right:1rem;
+	}
 
-    .contact-media img{
-      width:1.8rem;
-      height:1.8rem;
-    }
-
-    .contact-media1{
-      border-radius: 0.1rem;
-      margin-left:1rem;
-      filter:invert(100);
-    }
-
-    .contact-media1 img{
-      width:2rem;
-      height:2rem;
-      padding:0.1rem;
-    }
-
+	.contact-media1 img{
+		width:3rem;
+	}
