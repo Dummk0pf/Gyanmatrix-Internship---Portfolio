@@ -129,7 +129,7 @@
 
             
             <div class="section" id="contactme">
-                <form action="mail.php" method="post">
+                <div class="form">
                     <div class="inputfield">
                         <label for="name" placeholder="Don't be shy share me your name">Name :</label><br>
                         <input type="text" name="name" id="name">
@@ -143,7 +143,7 @@
                         <textarea name="review" id="review" cols="30" rows="10"></textarea>
                     </div>
                     <input type="submit" value="Send" id="submit">
-                </form>
+                </div class="form">
                 <div class="lastside">
                     <p>" This webpage looks absolutely stunning "<span style="font-size:1rem;font-style:italic;"> <br> -- you(maybe)</span></p>    
                     <div class="contact-m">
@@ -159,12 +159,7 @@
 
         </div>
     </div>
-    <script>
-        function disappear(){
-            let x = document.getElementById("dis");
-            x.style.display = "none";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
